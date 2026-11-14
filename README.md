@@ -4,11 +4,16 @@ A cross-platform desktop assistant starter built with Tauri 2, React, and TypeSc
 
 ## Included
 
-- Dark desktop chat workspace with local conversation persistence
-- Gemini-powered text chat through a small local API server
+- Gemini-powered assistant chat through a local API server
+- Local chat history, notes, reminders, and editable assistant memory
+- Reminder creation, completion, and deletion
+- Note creation and deletion
 - Quick-start prompts and keyboard send (`Enter`, with `Shift+Enter` for a newline)
-- Voice input when supported by the system webview (speech is transcribed into the composer)
-- Placeholder Reminders, Notes, and Settings sections
+- Voice input when supported by the system webview
+
+## Local data and privacy
+
+Chat history, notes, reminders, and the optional memory text are saved in the webview's local storage on this device. The memory text is sent to the configured Jarvis API with chat requests to personalize Gemini responses. Do not store sensitive information there. These features do not sync across devices and reminders do not yet trigger operating-system notifications.
 
 ## Configure Gemini
 

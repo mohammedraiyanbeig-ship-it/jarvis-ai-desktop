@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { setupTray } from './desktop';
-import { registerGlobalHotkey } from './hotkey';
+import { setupTray } from '../lib/desktop';
+import { registerGlobalHotkey } from '../lib/hotkey';
 
 export function useDesktopAssistant() {
   useEffect(() => {
